@@ -51,6 +51,7 @@ h1 {
     height: 230px;
     width: 240px;
     border: 5px outset black;
+    cursor: pointer;
 }
 
 #blue {
