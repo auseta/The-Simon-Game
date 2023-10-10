@@ -104,3 +104,34 @@ h1 {
 .game-over {
     background: red;
 }
+
+@media (max-width: 576px) {
+
+    h1 {
+        margin: 120px 0 0;
+        font-size: 54px;
+    }
+
+    .btn {
+        height: 200px;
+        width: 200px;
+    }
+
+    .circle {
+        height: 190px;
+        width: 190px;
+    }
+
+    .circle-logo {
+        height: 190px;
+        width: 190px;
+    }
+
+    .container {
+        margin: 150px 0;
+    }
+
+    .footer {
+        margin: 50px 0 0 0;
+    }
+}
