@@ -34,7 +34,16 @@ function checkAnswer(currentLevel) {
         }
     }
     else {
-        console.log("wrong")
+        playSound("wrong");
+
+        $("body").addClass("game-over");
+        setTimeout(() => {
+            $("body").removeClass("game-over")
+        }, 200);
+
+        $("h1").text("Game Over, press any key to restart");
+
+        startOver();
     }
 }
 
@@ -66,4 +75,10 @@ function animatePress(colour, time) {
     setTimeout(() => {
         $("#" + colour).css("box-shadow", "none").removeClass("pressed");
     }, time);
+}
+
+function startOver() {
+    level = 0;
+    gamePattern = [];
+    started = false;
 }
