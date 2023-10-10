@@ -98,3 +98,7 @@ h1 {
 .pressed {
     border-style: inset;
 }
+
+.game-over {
+    background-color: red;
+}
