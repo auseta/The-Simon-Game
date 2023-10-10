@@ -112,19 +112,9 @@ h1 {
         font-size: 54px;
     }
 
-    .btn {
+    .btn, .circle, .circle-logo {
         height: 200px;
         width: 200px;
-    }
-
-    .circle {
-        height: 190px;
-        width: 190px;
-    }
-
-    .circle-logo {
-        height: 190px;
-        width: 190px;
     }
 
     .container {
@@ -133,5 +123,16 @@ h1 {
 
     .footer {
         margin: 50px 0 0 0;
+    }
+}
+
+@media (max-width: 376px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    .circle, .circle-logo, .btn {
+        width: 160px;
+        height: 160px;
     }
 }
